@@ -43,6 +43,16 @@ wheel.install-dir = "re2c/data"
 build = "cp39-*"
 test-command = [
   "re2c --version",
+  "re2d --version",
+  "re2go --version",
+  "re2hs --version",
+  "re2java --version",
+  "re2js --version",
+  "re2ocaml --version",
+  "re2py --version",
+  "re2rust --version",
+  "re2v --version",
+  "re2zig --version",
   "re2c --help",
 ]
 environment.PIP_ONLY_BINARY = ":all:"
