@@ -12,6 +12,7 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
 endif()
 
 enable_language(CXX)
+enable_language(C)
 include(ExternalProject)
 
 include(re2c_version.cmake)
