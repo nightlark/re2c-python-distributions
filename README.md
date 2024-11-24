@@ -2,21 +2,61 @@
 
 [![PyPI Release](https://img.shields.io/pypi/v/re2c.svg)](https://pypi.org/project/re2c)
 
-[re2c](https://re2c.org/) is a free and open-source lexer generator for C, C++ and Go with a focus on generating fast code.
+[re2c](https://re2c.org/) is a free and open-source lexer generator for C, C++, D, Go, Haskell, Java, JS, OCaml, Python, Rust, V and Zig with a focus on generating fast code.
 
-This project packages the `re2c` (and `re2go`) utility as a Python package. It allows you to install `re2c` from PyPI:
+This project packages the `re2c` (and `re2go`) utility as a Python package, enabling `re2c` to be installed from PyPI:
 
 ```
+pip install re2c
+```
+
+or used as part of `build-system.requires` in a pyproject.toml file:
+
+```toml
+[build-system]
+requires = ["re2c"]
+```
+
+PyPI package versions will follow the `major.minor.patch` version numbers of re2c releases.
+
+Binary wheels for Windows, macOS, and Linux for most CPU architectures supported on PyPI are provided. ARM wheels for Raspberry Pi available at https://www.piwheels.org/project/re2c/.
+
+[re2c PyPI Package Homepage](https://github.com/nightlark/re2c-python-distributions)
+
+[re2c Homepage](https://re2c.org/)
+
+[re2c Source Code](https://github.com/skvadrik/re2c)
+
+[re2c License](https://github.com/skvadrik/re2c/blob/master/LICENSE): Public domain
+
+Installing re2c
+===============
+
+re2c can be installed by pip with:
+
+```sh
+pip install re2c
+```
+
+or:
+
+```sh
 python -m pip install re2c
 ```
 
-## Acknowledgements
+Building from the source dist package requires internet access in order to download a copy of the re2c source code.
 
-This repository builds off the following projects:
+Using with pipx
+===============
 
-* The [re2c](https://github.com/skvadrik/re2c) project
-* [scikit-build](https://github.com/scikit-build/scikit-build) to simplify the building a Python wheel from a CMake project
-* [cibuildwheel](https://github.com/pypa/cibuildwheel) for managing the CI builds that create wheels on a large number of platforms
-* [CMake](https://github.com/scikit-build/cmake-python-distributions) and [Ninja](https://github.com/scikit-build/ninja-python-distributions) for native Python wheel packaging examples, along with experience from contributing to the [swig](https://github.com/nightlark/swig-pipy) and [clang-format](https://github.com/ssciwr/clang-format-wheel) wheel packages
+Using `pipx run re2c <args>` will run re2c without any install step, as long as the machine has pipx installed (which includes GitHub Actions runners).
 
-Thanks to GitHub for providing the free CI resources to open source projects that are used to build these wheels.
+Using with pyproject.toml
+=========================
+
+re2c can be added to the `build-system.requires` key in a pyproject.toml file for building Python extensions that use re2c to generate code.
+
+```toml
+[build-system]
+requires = ["re2c"]
+```
