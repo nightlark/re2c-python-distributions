@@ -4,7 +4,7 @@
 
 [re2c](https://re2c.org/) is a free and open-source lexer generator for C, C++, D, Go, Haskell, Java, JS, OCaml, Python, Rust, V and Zig with a focus on generating fast code.
 
-This project packages the `re2c` (and `re2go`) utility as a Python package, enabling `re2c` to be installed from PyPI:
+This project packages the `re2c` utility (aliases for other languages such as `re2go` are also provided) as a Python package, enabling `re2c` to be installed from PyPI:
 
 ```
 pip install re2c
