@@ -22,40 +22,40 @@ def re2c():
 
 
 def re2d():
-    raise SystemExit(_program("re2d", sys.argv[1:]))
+    raise SystemExit(_program("re2c", ["--lang", "d"] + sys.argv[1:]))
 
 
 def re2go():
-    raise SystemExit(_program("re2go", sys.argv[1:]))
+    raise SystemExit(_program("re2c", ["--lang", "go"] + sys.argv[1:]))
 
 
 def re2hs():
-    raise SystemExit(_program("re2hs", sys.argv[1:]))
+    raise SystemExit(_program("re2c", ["--lang", "haskell"] + sys.argv[1:]))
 
 
 def re2java():
-    raise SystemExit(_program("re2java", sys.argv[1:]))
+    raise SystemExit(_program("re2c", ["--lang", "java"] + sys.argv[1:]))
 
 
 def re2js():
-    raise SystemExit(_program("re2js", sys.argv[1:]))
+    raise SystemExit(_program("re2c", ["--lang", "js"] + sys.argv[1:]))
 
 
 def re2ocaml():
-    raise SystemExit(_program("re2ocaml", sys.argv[1:]))
+    raise SystemExit(_program("re2c", ["--lang", "ocaml"] + sys.argv[1:]))
 
 
 def re2py():
-    raise SystemExit(_program("re2py", sys.argv[1:]))
+    raise SystemExit(_program("re2c", ["--lang", "python"] + sys.argv[1:]))
 
 
 def re2rust():
-    raise SystemExit(_program("re2rust", sys.argv[1:]))
+    raise SystemExit(_program("re2c", ["--lang", "rust"] + sys.argv[1:]))
 
 
 def re2v():
-    raise SystemExit(_program("re2v", sys.argv[1:]))
+    raise SystemExit(_program("re2c", ["--lang", "v"] + sys.argv[1:]))
 
 
 def re2zig():
-    raise SystemExit(_program("re2zig", sys.argv[1:]))
+    raise SystemExit(_program("re2c", ["--lang", "zig"] + sys.argv[1:]))
