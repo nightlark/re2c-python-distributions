@@ -18,14 +18,14 @@ jobs:
           echo "old_version=$old_version" >> $GITHUB_OUTPUT
 
           new_version_raw=$(git -c 'versionsort.suffix=-' \
-            ls-remote --exit-code --refs --sort='version:refname' --tags https://github.com/skvadrik/re2c/ 'v*.*'\
+            ls-remote --exit-code --refs --sort='version:refname' --tags https://github.com/skvadrik/re2c/ '*.*'\
             | tail --lines=1\
             | cut --delimiter='/' --fields=3)
 
           echo "New version (raw): $new_version_raw"
 
           new_version=$(git -c 'versionsort.suffix=-' \
-            ls-remote --exit-code --refs --sort='version:refname' --tags https://github.com/skvadrik/re2c/ 'v*.*'\
+            ls-remote --exit-code --refs --sort='version:refname' --tags https://github.com/skvadrik/re2c/ '*.*'\
             | tail --lines=1\
             | cut --delimiter='/' --fields=3\
             | grep -Po '\d+(\.\d+)+')
