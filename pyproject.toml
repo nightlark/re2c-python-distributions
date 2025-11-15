@@ -6,10 +6,10 @@ build-backend = "scikit_build_core.build"
 name = "re2c"
 description = "re2c is a free and open-source lexer generator for C, C++, D, Go, Haskell, Java, JS, OCaml, Python, Rust, V and Zig with a focus on generating fast code."
 keywords = ["re2c", "build", "c", "c++", "d", "go", "haskell", "java", "js", "ocaml", "python", "rust", "v", "zig"]
-license = {text = "https://github.com/skvadrik/re2c/blob/master/LICENSE"}
+license = "LicenseRef-Public-Domain"
+license-files = ["LICENSE"]
 readme = "README.md"
 classifiers = [
-  "License :: Public Domain",
   "Programming Language :: C",
   "Programming Language :: C++",
   "Programming Language :: D",
