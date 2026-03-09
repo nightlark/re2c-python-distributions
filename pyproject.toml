@@ -57,6 +57,10 @@ test-command = [
 ]
 environment.PIP_ONLY_BINARY = ":all:"
 
+[tool.cibuildwheel.linux]
+manylinux-x86_64-image = "quay.io/pypa/manylinux2010_x86_64:latest"
+manylinux-i686-image = "quay.io/pypa/manylinux2010_i686:latest"
+
 [project.scripts]
 re2c = "re2c:re2c"
 re2d = "re2c:re2d"
